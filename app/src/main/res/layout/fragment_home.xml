@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/homebackground"
+    android:orientation="vertical"
+    tools:context="com.blvd.sortofsleepy.yomeh.Home$PlaceholderFragment">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:paddingTop="20dp"
+        android:background="@color/cyan"
+        android:paddingBottom="20dp"
+        android:onClick="loadContacts">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:id="@+id/send_yo"
+            style="@style/section_title_text"
+            android:text="Say YoYoYo"/>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:background="@color/indigo">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:id="@+id/set_phrases"
+            style="@style/section_title_text"
+            android:text="Set YoYoYo's"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:paddingTop="20dp"
+        android:background="@color/yellow"
+        android:paddingBottom="20dp">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:id="@+id/about"
+            style="@style/section_title_text"
+            android:text="What YoYoYo about"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:paddingTop="20dp"
+        android:background="@color/light_blue"
+        android:paddingBottom="20dp">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:id="@+id/poke"
+            style="@style/section_title_text"
+            android:text="Poke and YoYoYo"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

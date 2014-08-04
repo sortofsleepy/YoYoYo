@@ -1,0 +1,27 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Holo.Light.NoActionBar.Fullscreen">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <!--colors-->
+    <color name="appbackground">#b2dfdb</color>
+    <color name="homebackground">#4dd0e1</color>
+    <color name="indigo">#3f51b5</color>
+    <color name="cyan">#00bcd4</color>
+    <color name="light_blue">#03a9f4</color>
+    <color name="yellow">#ffeb3b</color>
+    <color name="white">#ffffff</color>
+
+    <!-- Typography -->
+    <style name="Title">
+        <item name="android:fontFamily"></item>
+        <item name="android:textSize">32dp</item>
+    </style>
+
+    <style name="section_title_text">
+        <item name="android:textSize">30dp</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+</resources>
