@@ -15,12 +15,14 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.os.Build;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.blvd.sortofsleepy.yomeh.R;
 
 public class Home extends Activity {
 
-
+    public static String SMS_KEY = "SMS_SENT";
+    public static String SMS_NUMBER = "SMS_NUMBER";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,7 +35,15 @@ public class Home extends Activity {
                     .commit();
         }
 
-
+        /**
+         * If we're hitting home from a sent activity,
+         * display a toast indicating success or failure.
+         */
+        if(getIntent().getStringExtra(SMS_KEY) != ""){
+            CharSequence message = "Your SMS to the number " + getIntent().getStringExtra(SMS_NUMBER) + " was sent successfully";
+            Toast toast = Toast.makeText(this,message, Toast.LENGTH_SHORT);
+            toast.show();
+        }
 
         Log.i("HOME","HOME IS LAUNCHED");
     }

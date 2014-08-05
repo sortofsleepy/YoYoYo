@@ -30,8 +30,17 @@
             android:name=".Contacts"
             android:label="@string/title_activity_contacts" >
         </activity>
+        <activity
+            android:name=".About"
+            android:label="@string/title_activity_about" >
+        </activity>
+        <activity
+            android:name=".Facebook"
+            android:label="@string/title_activity_facebook" >
+        </activity>
     </application>
 
+    <uses-permission android:name="android.permission.SEND_SMS" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
 
 </manifest>
